@@ -5,7 +5,11 @@ public class Employee {
     private String name;
     private double salary;
 
-    public Employee(long id, String name, double salary){}
+    public Employee(long id, String name, double salary){
+    this.id=id;
+    this.name=name;
+    this.salary=salary;
+    }
     public long getId(){
         return id;
     }
@@ -15,12 +19,28 @@ public class Employee {
     }    public double getSalary(){
         return salary;
     }
-    public void setId(){}
-    public void setName(){}
-    public void setSalary(){}
+    public void setId(long id){
+        this.id=id;
+
+    }
+    public void setName(String name){
+        this.name=name;
+    }
+    public void setSalary(double salary){
+        this.salary=salary;
+    }
 
     //method
     public void work(){
         System.out.println("Employee starts to working");
     }
-}
+
+
+    @Override
+    public String toString(){
+        return "Employee{"+ "id="+ id +", name="+name + '\'' + "salary="+ salary +"}";
+    }
+
+
+    }
+

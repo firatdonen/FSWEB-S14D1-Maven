@@ -7,6 +7,6 @@ public class MidDeveloper extends Employee{
 
     @Override
     public void work(){
-        System.out.println("MidDeveloper maaşı="+getSalary()*.6);
+        System.out.println(getName()+" mid developer starts to working ....");
     }
 }
